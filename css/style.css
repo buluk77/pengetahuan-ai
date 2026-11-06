@@ -1,0 +1,126 @@
+:root {
+    --warna-utama: #2563eb;
+    --warna-teks: #1f2937;
+    --warna-latar: #ffffff;
+    --warna-abu: #f3f4f6;
+    --warna-sorot: #dbeafe;
+    --batas: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--warna-teks);
+    background: var(--warna-latar);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar {
+    background: #111827;
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.2rem;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover {
+    color: #93c5fd;
+}
+
+.section {
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--warna-abu);
+}
+
+.section h2 {
+    color: var(--warna-utama);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--warna-sorot);
+}
+
+.section h3 {
+    margin: 1.2rem 0 0.6rem;
+    color: #374151;
+}
+
+pre, .code-box {
+    background: var(--warna-abu);
+    padding: 1rem;
+    border-radius: var(--batas);
+    overflow-x: auto;
+    margin: 1rem 0;
+    font-family: monospace;
+    border-left: 4px solid var(--warna-utama);
+}
+
+.highlight-box {
+    background: var(--warna-sorot);
+    padding: 1rem;
+    border-radius: var(--batas);
+    margin: 1rem 0;
+}
+
+ul, ol {
+    margin: 1rem 0 1rem 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+code {
+    background: var(--warna-abu);
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+footer {
+    background: #1f2937;
+    color: #9ca3af;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .nav-link {
+        display: inline-block;
+        margin: 0.3rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
